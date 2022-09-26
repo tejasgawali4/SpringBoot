@@ -22,8 +22,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-	</properties>
-
+		</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -40,7 +39,12 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+<distributionManagement>
+  <snapshotRepository>
+    <id>nexus</id>
+    <url>http://13.235.67.248:8081/nexus/content/repositories/snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
